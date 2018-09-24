@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jexcel/1.5.7/css/jquery.jexcel.min.css" type="text/css" />
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.0/redux.min.js"></script>
     <script src="https://unpkg.com/xlsx@0.14.0/xlsx.js"></script>
     <style>
         #app {
@@ -59,7 +58,10 @@
                 </div>
             </nav>
             <div id="my"><h4>Seleccione un archivo!</h4></div>
-            <div id="buscar"><input type="text"></input></div>
+            <div id="busca-lista">
+                <div id="buscar"><input type="text"></input></div>
+                <div id="lista"></div>
+            </div>
             
         </div>
         <script src="./js/app.js"></script>

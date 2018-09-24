@@ -1,8 +1,10 @@
-importScripts('');
-postMessage({t:'ready'});
-onmessage = function(evt) {
+importScripts('xlsx.full.min.js');
+postMessage({t:"ready"});
+
+onmessage = function (evt) {
   var v;
-  try { v = XLSX.read(evt.data.d, evt.data.b); }
-  catch(e) { postMessage({t:"e",d:e.stack}); }
-  postMessage({t:evt.data.t, d:JSON.stringify(v)});
-}
+  try {
+    v = XLSX.read(evt.data.d, {type: evt.data.b});
+postMessage({t:"xlsx", d:JSON.stringify(v)});
+  } catch(e) { postMessage({t:"e",d:e.stack||e}); }
+};
