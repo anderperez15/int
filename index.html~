@@ -59,7 +59,11 @@
             </nav>
             <div id="my"><h4>Seleccione un archivo!</h4></div>
             <div id="busca-lista">
-                <div id="buscar"><input type="text"></input></div>
+<<<<<<< HEAD
+                <div id="buscar"><input type="text"/></div>
+=======
+                <div id="buscar"><input type="text"></div>
+>>>>>>> 16fda6f4e998f3a1464eecf9e290735cac919b71
                 <div id="lista"></div>
             </div>
             
